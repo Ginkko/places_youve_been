@@ -26,4 +26,12 @@ describe(Place) do
     end
   end
 
+  describe('.clear') do
+    it('clears all saved places') do
+      Place.new('San Testo').save()
+      Place.clear()
+      expect(Place.all()).to(eq([]))
+    end
+  end
+
 end

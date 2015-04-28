@@ -18,4 +18,8 @@ class Place
     @name
   end
 
+  define_singleton_method(:clear) do
+    @@places = []
+  end
+
 end
