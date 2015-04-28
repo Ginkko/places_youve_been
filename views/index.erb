@@ -1,0 +1,18 @@
+<h1> Place List </h1>
+
+<p> Here are all of our places: </p>
+
+<ul>
+  <% @place_list.each() do |place| %>
+  <li> <%= place.name() %> </li>
+  <% end %>
+</ul>
+
+<form action='/place_saved' method='post'>
+  <div class = 'form-group'>
+    <p> Add a new place: </p>
+    <label for='name'> Name </label>
+    <input id='name' name='name' type='text'>
+  </div>
+<button class='btn btn-danger btn-sm' id='save_place' type='submit'> Add place </button>
+</form>
