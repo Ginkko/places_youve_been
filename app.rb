@@ -9,7 +9,7 @@ get('/')do
 end
 
 post('/place_saved') do
-  description = params.fetch('name')
+  name = params.fetch('name')
   place = Place.new(name)
   place.save()
   erb(:place_saved)
