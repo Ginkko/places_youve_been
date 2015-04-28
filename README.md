@@ -5,6 +5,6 @@ Alec Arme and Bob Ellis 4.28.15
 
 Be sure to bundle to install all necessary gems!
 
-Running on Heroku:
+Running on Heroku: https://places-youve-been.herokuapp.com/
 
 MIT LICENSE
