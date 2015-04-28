@@ -3,6 +3,9 @@ require('place')
 require('pry')
 
 describe(Place) do
+  before() do
+    Place.clear()
+  end
 
   describe('.all') do
     it('returns all elements of place') do
